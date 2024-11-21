@@ -3,6 +3,19 @@
     src: url('fonts/Gilroy-Regular.ttf'); 
   }
 
+  @font-face {
+    font-family: 'Gilroy-Semibold'; 
+    src: url('fonts/Gilroy-SemiBold.ttf'); 
+  }
+
+  @font-face {
+    font-family: 'Gilroy-Bold'; 
+    src: url('fonts/Gilroy-Bold.ttf'); 
+  }
+
+
+
+
   body {
     font-family: 'Gilroy', sans-serif; 
   }
