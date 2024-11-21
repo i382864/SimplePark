@@ -1,3 +1,90 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-regular.ttf'); 
 }
+body{
+    margin-top: 100px;
+    padding: 0;
+    font-family: 'Gilroy', sans-serif;
+}
+#simpleparklogo{
+    width: 55%;
+    height: 55%;
+    margin-left: 20px;
+    object-fit: contain;
+}
+.menu{
+    display: inline-block;
+    border: 2px solid #3b6efb;
+    vertical-align: middle; 
+}
+.menu-container{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    z-index: 1000;
+}
+.hamburger {
+    font-size: 24px;
+    float: right;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+} 
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    width: 100%;
+    background-color: #444;
+    border-top: 1px solid #555;
+}
+.dropdown.hidden {
+    display: none; 
+}
+.dropdown ul {
+    list-style: none;
+}
+.dropdown li {
+    border-bottom: 1px solid #555;
+}
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+.dropdown a:hover {
+    background-color: #555;
+}
+.goal{
+    text-align: center;
+}
+.downloadbox {
+position: absolute;
+top: 5cm; 
+left: 0;
+right: 0;
+bottom: 5cm; 
+background-color: #3b6efb; 
+justify-content: center;
+align-items: center;
+text-align: left;
+color: white; 
+}
+.downloadbutton{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
