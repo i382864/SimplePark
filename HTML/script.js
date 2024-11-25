@@ -48,3 +48,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  document.addEventListener('DOMContentLoaded', () => {
+    const burgerMenu = document.querySelector('.menu-button'); // The menu button
+    const closeButton = document.querySelector('#closeButton'); // The close button
+    const overlay = document.querySelector('#overlay');
+
+    // Open overlay
+    burgerMenu.addEventListener('click', () => {
+        overlay.style.display = 'flex';
+    });
+
+    // Close overlay
+    closeButton.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
+
+    // Close overlay when clicking outside
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+});
