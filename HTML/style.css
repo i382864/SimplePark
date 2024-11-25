@@ -71,4 +71,263 @@
     margin-top: 0;
   }
 
-  
+  .section-white {
+    background-color: #fff;
+    text-align: center;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 50vh; /* Dynamisch afhankelijk van schermgrootte */
+}
+
+.section-white p {
+    margin: 10px 0; /* Consistente marges */
+}
+
+.section-white img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .section-white {
+        padding: 10% 20%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-white {
+        padding: 10% 30%;
+    }
+}
+
+.footer {
+    text-align: center;
+    background-color: #1C1F3A;
+    padding: 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-newsletter h4,
+.footer-download h4,
+.footer-social h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+}
+
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.newsletter-input input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    outline: none;
+    color: #000;
+}
+
+.newsletter-input button {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.newsletter-input button img {
+    width: 20px;
+}
+
+.footer-download .app-buttons a img {
+    width: 150px;
+    margin: 10px;
+}
+
+.footer-social .social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #FFFFFF;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    gap: 10px; /* Zorgt voor ruimte tussen de input en de knop */
+}
+
+.newsletter-input input {
+    width: 300px; /* Breedte van het invoerveld */
+    padding: 12px; /* Ruimte binnen de input */
+    border: 1px solid #fff; /* Randkleur */
+    border-radius: 25px; /* Maak de randen rond */
+    outline: none; /* Geen blauwe rand bij focus */
+    font-size: 16px; /* Tekstgrootte */
+    color: #172240; /* Tekstkleur */
+    background-color: #FFFFFF; /* Achtergrond van de input */
+}
+
+.newsletter-input input::placeholder {
+    color: #7D7D7D; /* Kleur van de placeholdertekst */
+    font-size: 14px; /* Grotere placeholder voor betere zichtbaarheid */
+}
+
+.newsletter-input button {
+    background-color: #172240; /* Knopkleur */
+    color: #fff; /* Tekstkleur van de knop */
+    border: none; /* Geen rand om de knop */
+    border-radius: 50%; /* Ronde knop */
+    width: 45px; /* Knopbreedte */
+    height: 45px; /* Knophoogte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Cursor verandert bij hover */
+}
+
+.newsletter-input button img {
+    width: 20px; /* Mail-icoon grootte */
+    height: auto;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: white;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-button{
+    background-color: white;
+    border: none;
+}
+
+.header .menu-button img {
+    width: 35px;
+    cursor: pointer;
+}
+#gemeentes {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+}
+/* Hero sectie */
+.hero {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #3b6efb;
+    color: white;
+    position: relative;
+}
+
+
+
+.hero .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.hero .stats p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.hero .description {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.hero .download-button {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #172240;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: -55%;
+}
+
+.hero .hero-image {
+    width: 150px;
+    position: absolute;
+    bottom: -40px;
+    right: 20%;
+    top: 43.7%;
+    transform: translateX(50%);
+}
+
+/* Over sectie */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    color: #172240;
+}
+
+.about h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color: #3b6efb;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
