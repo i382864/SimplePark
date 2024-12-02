@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include HERE Maps CSS -->
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <style>
+        /* Set the height of the map */
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Include HERE Maps JavaScript API -->
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript">
+        // Replace with your own HERE API key
+        var platform = new H.service.Platform({
+            apikey: 'Rla5ZRV1ClOr08BdZntjdWTlAo-urZ2gHbl5Uk_LObw'
+        });
+
+        // Initialize the map
+        var defaultLayers = platform.createDefaultLayers();
+        var map = new H.Map(
+            document.getElementById('map'),
+            defaultLayers.vector.normal.map,
+            {
+                zoom: 10,
+                center: { lat: 52.5, lng: 13.4 } // Initial map center [latitude, longitude]
+            }
+        );
+
+        // Add UI components (optional)
+        var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+        // Use Geolocation API to get the user's current location
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var userLongitude = position.coords.longitude;
+                var userLatitude = position.coords.latitude;
+
+                // Center map on user's location
+                map.setCenter({ lat: userLatitude, lng: userLongitude });
+                map.setZoom(14); // Adjust zoom level
+
+                // Create a custom marker with an icon
+                var icon = new H.map.Icon('images/locationpin.svg'); // Path to your custom icon
+                var marker = new H.map.Marker({ lat: userLatitude, lng: userLongitude }, { icon: icon });
+
+                // Add the marker to the map
+                map.addObject(marker);
+
+            }, function(error) {
+                console.error('Error getting user location: ', error);
+            });
+        } else {
+            console.log('Geolocation is not supported by this browser.');
+        }
+    </script>
+</body>
+</html>
