@@ -18,13 +18,12 @@ User interface
 <div style="display:flex">
   <div style="flex:1;padding-right:10px;">
     <img src="/HTML/Screenshots/IMG_2184.jpg" width="20%">
-    <img src="/Screen_Captures/EULA.png" width="20%">
-    <img src="/Screen_Captures/register.png" width="20%">
+    <img src="/HTML/Screenshots/IMG_2188.jpg" width="20%">
+    <img src="/HTML/Screenshots/IMG_2187.jpg" width="20%">
   </div>
   <div style="flex:1;padding-right:10px;">
-    <img src="/Screen_Captures/MainMaps.png" width="20%">
-    <img src="/Screen_Captures/info_screen.png" width="20%">
-    <img src="/Screen_Captures/adminActivity.png" width="20%">
+  <img src="/HTML/Screenshots/IMG_2185.jpg" width="20%">
+    <img src="/HTML/Screenshots/IMG_2186.jpg" width="20%">
   </div>
 </div>
 
