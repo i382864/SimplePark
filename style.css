@@ -24,14 +24,32 @@ body{
     align-items: center; 
     justify-content: space-between;
 }
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
     color: white;
-    z-index: 1000;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-button{
+    background-color: white;
+    border: none;
+}
+.hidden {
+    display: none;
+}
+
+.header .menu-button img {
+    width: 35px;
+    cursor: pointer;
 }
 .hamburger {
     font-size: 24px;
@@ -41,6 +59,22 @@ header {
     color: rgb(0, 0, 0);
     cursor: pointer;
 } 
+.indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.indicator.active {
+    width: 30px; 
+    height: 10px; 
+    border-radius: 5px;
+    background-color: #007bff; 
+}
 .dropdown {
     display: flex;
     flex-direction: column;
@@ -69,6 +103,91 @@ header {
 .dropdown a:hover {
     background-color: #555;
 }
+.download-btn {
+    background-color: #172240;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+#gemeentes {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+}
+.hero {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #3b6efb;
+    color: white;
+    position: relative;
+}
+
+.hero .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.hero .stats p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.hero .description {
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.hero .download-button {
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #172240;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: -30%;
+}
+
+.hero .hero-image {
+    width: 150px;
+    position: absolute;
+    bottom: -40px;
+    right: 20%;
+    top: 43.7%;
+    transform: translateX(50%);
+}
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    color: #172240;
+}
+
+.about h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color: #3b6efb;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
 .box {
     width: 100vw; 
     height: 100%; 
@@ -76,11 +195,6 @@ header {
     margin: 0px; 
     max-width: 100%; 
     box-sizing: border-box;
-}
-.box.goal{
-    text-align: center;
-    margin-top: 2cm;
-    background-color: white;
 }
 .box.downloadbox {
     background-color: #3b6efb; 
@@ -97,5 +211,6 @@ header {
     text-align: center;
     padding: 30px;
 }
+
 
 

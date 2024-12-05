@@ -1,4 +1,4 @@
-document.getElementById('hamburger').addEventListener('click', () => {
-    const dropdown = document.getElementById('dropdown');
-    dropdown.classList.toggle('hidden');
-  });
+document.getElementById('menu-button').addEventListener('click', () => {
+  const dropdown = document.getElementById('dropdown');
+  dropdown.classList.toggle('hidden');
+});
