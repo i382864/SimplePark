@@ -23,7 +23,46 @@
         </header>
     </div>
 
-<h2 id="gemeentes">140+ gemeentes door heel Nederland</h2>
+    <div class="overlay" id="overlay">
+        <div class="overlay-header">
+            <div class="support-contact">
+                <img src="images/CustomerService.png" alt="Support Icon">
+                <p>Support & Contact</p>
+            </div>
+            <button class="close-button" id="closeButton" aria-label="Close">&times;</button>
+        </div>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#hoewerktdeapp">Hoe werkt de app?</a></li>
+                    <li><a href="#supportencontact">Support & Contact</a></li>
+                    <li><a href="#overons">Over ons</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay-content">
+            <button class="download-btn">Download de app</button>
+           <button onclick="window.open('map.html');" class="work-btn">Hoe het werkt</button>
+            <div class="language-selector">
+                <img src="images/worldlangrep.svg" alt="Language Icon">
+                <select>
+                    <option>Nederlands</option>
+                    <option>English</option>
+                    <option>Deutsch</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button active" id="huren-btn" onclick="setActive('huren-btn')">Huren</button>
+        <button class="button" id="verhuren-btn" onclick="setActive('verhuren-btn')">Verhuren</button>
+    </div>
+    <div class="home">
+        <p>Eén parkeerplek, exclusief, altijd beschikbaar en 100% voor jou.</p>
+
+    </div>
+
 <section class="hero">
     <div class="stats">
         <p><strong>Gebruikers</strong><br>70.000+</p>
