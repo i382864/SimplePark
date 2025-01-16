@@ -1,11 +1,16 @@
 # SimplePark
 
 Group members 
+
 Sarvin Satchithanantham
+
 Diyar Toprak
+
 Dorinda van Weperen
 
+
 Description
+
 The city is becoming busier and parking is getting more difficult. SimplePark offers a solution by making unused private parking spaces and charging stations accessible via our app. Renters find a place easily; owners earn extra income. In addition, SimplePark is the all-in-one parking app with extras such as on-street parking, parking garages and public charging stations.
 Features
 Booking steps (carrousel)
@@ -46,11 +51,17 @@ User interface
 
 
 Getting started
+
 Go to the following link: simplepark.nl
+
 Download the app onto your phone
+
 Create an account or log in with an existing one
+
 Allow application to access your notifications and location
+
 Use the maps screen to locate a preferred parking location or charging station
+
 Park and enjoy!
 
 Requirements
